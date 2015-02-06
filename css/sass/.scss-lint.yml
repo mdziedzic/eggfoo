@@ -137,6 +137,10 @@ linters:
         - filter
         - background
         - border
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
         - outline
         - border-radius
         - box shadow
