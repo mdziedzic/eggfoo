@@ -794,31 +794,6 @@ dl {
   dl dd {
     margin: 0; }
 
-table {
-  -webkit-font-feature-settings: "kern", "liga", "tnum";
-  -moz-font-feature-settings: "kern", "liga", "tnum";
-  -ms-font-feature-settings: "kern", "liga", "tnum";
-  font-feature-settings: "kern", "liga", "tnum";
-  border-collapse: collapse;
-  margin: 0.75em 0;
-  table-layout: fixed;
-  width: 100%; }
-
-th {
-  border-bottom: 1px solid #b7b7b7;
-  font-weight: 600;
-  padding: 0.75em 0;
-  text-align: left; }
-
-td {
-  border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
-
-tr,
-td,
-th {
-  vertical-align: middle; }
-
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
@@ -827,7 +802,7 @@ body {
   font-family: "Lato", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  color: #000;
+  color: #9ba19e;
   -webkit-font-smoothing: antialiased; }
 
 h1,
@@ -841,8 +816,24 @@ h6 {
   font-size: 1em;
   line-height: 1.2; }
 
+h1 {
+  font-size: 4em;
+  color: #fff; }
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 200;
+  font-style: italic;
+  color: #f5a623; }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700; }
+
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-size: 1.5em;
+  font-weight: 200; }
 
 a {
   text-decoration: none;
@@ -886,7 +877,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 68em;
+  max-width: 1016px;
   opacity: 0.4;
   pointer-events: none;
   position: fixed;
@@ -908,12 +899,6 @@ body:before {
       background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.88976%, transparent 6.88976%, transparent 8.46457%, #eee 8.46457%, #eee 15.35433%, transparent 15.35433%, transparent 16.92913%, #eee 16.92913%, #eee 23.8189%, transparent 23.8189%, transparent 25.3937%, #eee 25.3937%, #eee 32.28346%, transparent 32.28346%, transparent 33.85827%, #eee 33.85827%, #eee 40.74803%, transparent 40.74803%, transparent 42.32283%, #eee 42.32283%, #eee 49.2126%, transparent 49.2126%, transparent 50.7874%, #eee 50.7874%, #eee 57.67717%, transparent 57.67717%, transparent 59.25197%, #eee 59.25197%, #eee 66.14173%, transparent 66.14173%, transparent 67.71654%, #eee 67.71654%, #eee 74.6063%, transparent 74.6063%, transparent 76.1811%, #eee 76.1811%, #eee 83.07087%, transparent 83.07087%, transparent 84.64567%, #eee 84.64567%, #eee 91.53543%, transparent 91.53543%, transparent 93.11024%, #eee 93.11024%, #eee 100.0%, transparent 100.0%);
       background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.88976%, transparent 6.88976%, transparent 8.46457%, #eee 8.46457%, #eee 15.35433%, transparent 15.35433%, transparent 16.92913%, #eee 16.92913%, #eee 23.8189%, transparent 23.8189%, transparent 25.3937%, #eee 25.3937%, #eee 32.28346%, transparent 32.28346%, transparent 33.85827%, #eee 33.85827%, #eee 40.74803%, transparent 40.74803%, transparent 42.32283%, #eee 42.32283%, #eee 49.2126%, transparent 49.2126%, transparent 50.7874%, #eee 50.7874%, #eee 57.67717%, transparent 57.67717%, transparent 59.25197%, #eee 59.25197%, #eee 66.14173%, transparent 66.14173%, transparent 67.71654%, #eee 67.71654%, #eee 74.6063%, transparent 74.6063%, transparent 76.1811%, #eee 76.1811%, #eee 83.07087%, transparent 83.07087%, transparent 84.64567%, #eee 84.64567%, #eee 91.53543%, transparent 91.53543%, transparent 93.11024%, #eee 93.11024%, #eee 100.0%, transparent 100.0%); } }
 
-h1 {
-  font-size: 4em; }
-
-h2 {
-  font-size: 2em; }
-
 header,
 footer,
 section {
@@ -923,14 +908,14 @@ header {
   position: fixed;
   top: 0;
   height: 100px;
-  background-color: rgba(0, 128, 0, 0.3); }
+  background-color: rgba(0, 145, 50, 0.41); }
 
 footer {
   height: 100px;
-  background-color: rgba(0, 128, 0, 0.3); }
+  background-color: rgba(0, 145, 50, 0.41); }
 
 .l-content {
-  max-width: 68em;
+  max-width: 1016px;
   margin-left: auto;
   margin-right: auto; }
   .l-content::after {
@@ -942,8 +927,7 @@ footer {
   float: left;
   display: block;
   margin-right: 1.5748%;
-  width: 32.28346%;
-  background-color: #ddd; }
+  width: 32.28346%; }
   .l-section-header:last-child {
     margin-right: 0; }
   .l-section-header h2 {
@@ -954,9 +938,12 @@ footer {
   display: block;
   margin-right: 1.5748%;
   width: 57.67717%;
-  margin-left: 8.46457%;
-  background-color: #ddd; }
+  margin-left: 8.46457%; }
   .l-section-body:last-child {
     margin-right: 0; }
+
+.l-section-bottom {
+  height: 425px;
+  background-color: rgba(245, 166, 35, 0.54); }
 
 /*# sourceMappingURL=main.css.map */

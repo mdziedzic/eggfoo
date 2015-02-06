@@ -8,12 +8,12 @@ header {
     position: fixed;
     top: 0;
     height: 100px;
-    background-color: hsla(120, 100%, 25%, 0.3);
+    background-color: $green-alpha;
 }
 
 footer {
     height: 100px;
-    background-color: hsla(120, 100%, 25%, 0.3);
+    background-color: $green-alpha;
 }
 
 .l-content {    
@@ -22,7 +22,7 @@ footer {
 
 .l-section-header {
     @include span-columns(4);
-    background-color: #ddd;
+//    background-color: #ddd;
     
     h2 {
         text-align: right;
@@ -32,5 +32,10 @@ footer {
 .l-section-body { 
     @include span-columns(7);
     @include shift(1);
-    background-color: #ddd;
+//    background-color: #ddd;
+}
+
+.l-section-bottom {
+    height: 425px;
+    background-color: $orange-alpha;
 }
