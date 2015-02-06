@@ -1,0 +1,34 @@
+html,
+body {
+    height: 100%;
+}
+
+#home {
+    @include background-size(cover);
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/eggs.png");
+    background-position: center;
+    background-attachment: fixed;    
+    
+    #logo {
+        @include animation(fadeIn 0.75s ease-in);
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+    h1, 
+    p {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 150px;
+        text-align: center;
+    }
+    
+    p {
+        padding-top: 50px;
+        color: #fff;
+    }
+}
+

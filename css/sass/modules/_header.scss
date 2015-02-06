@@ -1,0 +1,8 @@
+nav {
+    @include animation(rotate 1.75s ease-out);
+    width: 22px;
+    height: 23px;
+    margin: 20px 0 0;
+    background-image: url("../img/menu.png");
+    background-size: 100% 100%;
+}
