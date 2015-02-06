@@ -129,6 +129,10 @@ linters:
         - height
         - margin
         - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
         - 
         - list-style
         - border-collapse
@@ -238,7 +242,7 @@ linters:
     properties: []
 
   VendorPrefixes:
-    enabled: true
+    enabled: false
     identifier_list: base
     include: []
     exclude: []
