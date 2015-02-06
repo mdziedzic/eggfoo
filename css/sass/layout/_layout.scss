@@ -1,0 +1,36 @@
+header,
+footer,
+section {
+    width: 100%;    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    background-color: hsla(120, 100%, 25%, 0.3);
+}
+
+footer {
+    height: 100px;
+    background-color: hsla(120, 100%, 25%, 0.3);
+}
+
+.l-content {    
+    @include outer-container($max-width);        
+}
+
+.l-section-header {
+    @include span-columns(4);
+    background-color: #ddd;
+    
+    h2 {
+        text-align: right;
+    }
+}
+
+.l-section-body { 
+    @include span-columns(7);
+    @include shift(1);
+    background-color: #ddd;
+}
