@@ -57,7 +57,7 @@ linters:
     enabled: true
 
   IdSelector:
-    enabled: true
+    enabled: false
 
   ImportantRule:
     enabled: true
@@ -75,7 +75,7 @@ linters:
 
   LeadingZero:
     enabled: true
-    style: exclude_zero # or 'include_zero'
+    style: include_zero # or 'exclude_zero'
 
   MergeableSelector:
     enabled: true
@@ -101,7 +101,64 @@ linters:
   PropertySortOrder:
     enabled: true
     ignore_unspecified: false
-    separate_groups: false
+    separate_groups: true
+    order:
+        - display
+        - visibility
+        - opacity
+        - 
+        - box-sizing
+        - overflow
+        - clip
+        - 
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        - float
+        - clear
+        - z-index        
+        - 
+        - max-width
+        - max-height
+        - min-width
+        - min-height
+        
+        - width
+        - height
+        - margin
+        - padding
+        - 
+        - list-style
+        - border-collapse
+        - resize
+        -
+        - filter
+        - background
+        - border
+        - outline
+        - border-radius
+        - box shadow
+        - transform
+        - 
+        - font
+        - font-family
+        - font-size
+        - line-height
+        - font-weight
+        - letter-spacing
+        - word-spacing
+        - text-align
+        - text-transform
+        - font-style
+        - text-decoration
+        - text-shadow
+        - word-wrap
+        - 
+        - cursor
+        - animation
+        - transition
 
   PropertySpelling:
     enabled: true
