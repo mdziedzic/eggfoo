@@ -140,6 +140,9 @@ linters:
         -
         - filter
         - background
+        - background-position
+        - background-size
+        - background-color
         - border
         - border-top
         - border-right
