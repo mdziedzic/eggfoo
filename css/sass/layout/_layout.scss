@@ -7,8 +7,7 @@ section {
 header {
     position: fixed;
     top: 0;
-    height: 100px;
-//    background-color: $green-alpha;
+    height: 70px;
 }
 
 footer {
@@ -22,7 +21,7 @@ footer {
 
 .l-section-header {
     @include span-columns(4);
-//    background-color: #ddd;
+    margin-top: 190px;
     
     h2 {
         text-align: right;
@@ -32,7 +31,8 @@ footer {
 .l-section-body { 
     @include span-columns(7);
     @include shift(1);
-//    background-color: #ddd;
+    margin-top: 120px;
+    margin-bottom: 100px;
 }
 
 .l-section-bottom {

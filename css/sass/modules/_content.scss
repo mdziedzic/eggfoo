@@ -1,9 +1,34 @@
-.l-section-header {
-    margin-top: 190px;
+$parallax-window-height: 425px;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+    overflow: hidden;
+    position: relative;
+    max-height: $parallax-window-height;
+    width: 100%;
+    text-align: center;
 }
 
-.l-section-body {
-    margin-top: 120px;
-    margin-bottom: 100px;
+.parallax-static-content {
+    position: relative;
+    z-index: 9;
+    height: 425px;
+    padding: 8em 0;
+    color: #9a9a8a;
 }
+
+.parallax-background {
+    position: absolute;
+    top: - $parallax-window-height / 3;
+    left: 0;
+    width: 100%;
+    height: $parallax-background-height;
+    background: url("../img/eggs2.jpg") repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #fff;
+}
+
+// Based on http://codepen.io/skeurentjes/
+
 
