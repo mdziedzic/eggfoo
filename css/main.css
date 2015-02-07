@@ -817,9 +817,10 @@ h6 {
   line-height: 1.2; }
 
 h1 {
-  font-size: 5em;
+  font-size: 9em;
+  line-height: 1;
   font-style: italic;
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.8); }
 
 h2 {
   font-size: 2.25em;
@@ -856,6 +857,16 @@ img,
 picture {
   max-width: 100%;
   margin: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -935,16 +946,6 @@ picture {
     -o-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
     opacity: 1; } }
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
 header,
 footer,
 section {
@@ -995,6 +996,14 @@ html,
 body {
   height: 100%; }
 
+#logo {
+  -webkit-animation: fadeIn 0.75s ease-in;
+  -moz-animation: fadeIn 0.75s ease-in;
+  animation: fadeIn 0.75s ease-in;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px; }
+
 #home {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1005,22 +1014,21 @@ body {
   background-image: url("../img/eggs.png");
   background-position: center;
   background-attachment: fixed; }
-  #home #logo {
-    -webkit-animation: fadeIn 0.75s ease-in;
-    -moz-animation: fadeIn 0.75s ease-in;
-    animation: fadeIn 0.75s ease-in;
-    display: block;
-    margin: 0 auto;
-    padding-top: 20px; }
   #home h1,
   #home p {
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center; }
   #home p {
     padding-top: 50px;
     color: #fff; }
+  #home #footnote-1 sup:first-child {
+    font-size: 1.5em;
+    vertical-align: -25px; }
+  #home #footnote-2 {
+    max-width: 50%;
+    font-size: 1em; }
 
 nav {
   -webkit-animation: rotate 1.75s ease-out;
@@ -1031,5 +1039,12 @@ nav {
   margin: 20px 0 0;
   background-image: url("../img/menu.png");
   background-size: 100% 100%; }
+
+.l-section-header {
+  margin-top: 190px; }
+
+.l-section-body {
+  margin-top: 120px;
+  margin-bottom: 100px; }
 
 /*# sourceMappingURL=main.css.map */
