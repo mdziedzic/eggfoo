@@ -31,6 +31,11 @@ body {
         color: #fff;
     }  
     
+    h1 sup {
+        margin-left: -10px;
+        vertical-align: -25px;
+    }
+    
     #footnote-1 {
         sup:first-child {
             font-size: 1.5em;
