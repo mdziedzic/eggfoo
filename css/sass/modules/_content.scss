@@ -10,7 +10,11 @@
     background-attachment: scroll;
     
     .hash {
+        position: relative;
+        top: -50px;
         height: 425px;
         background: url("../img/hash.png");
+        background-size: 1600px 450px;        
     }
 }
+
