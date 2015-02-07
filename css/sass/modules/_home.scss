@@ -3,6 +3,13 @@ body {
     height: 100%;
 }
 
+#logo {
+    @include animation(fadeIn 0.75s ease-in);
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
 #home {
     @include background-size(cover);
     width: 100%;
@@ -11,24 +18,28 @@ body {
     background-position: center;
     background-attachment: fixed;    
     
-    #logo {
-        @include animation(fadeIn 0.75s ease-in);
-        display: block;
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-    
     h1, 
     p {
-        max-width: 900px;
+        max-width: 90%;
         margin: 0 auto;
-        padding-top: 150px;
+        padding-top: 100px;
         text-align: center;
     }
     
     p {
         padding-top: 50px;
         color: #fff;
+    }  
+    
+    #footnote-1 {
+        sup:first-child {
+            font-size: 1.5em;
+            vertical-align: -25px;
+        }
+    }
+    
+    #footnote-2 {
+        max-width: 50%;
+        font-size: 1em;
     }
 }
-
