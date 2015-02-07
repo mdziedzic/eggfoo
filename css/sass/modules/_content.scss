@@ -1,34 +1,16 @@
-$parallax-window-height: 425px;
-$parallax-background-height: $parallax-window-height * 2;
-
-.parallax-window {
-    overflow: hidden;
-    position: relative;
-    max-height: $parallax-window-height;
+.bg-holder {
     width: 100%;
-    text-align: center;
-}
-
-.parallax-static-content {
-    position: relative;
-    z-index: 9;
     height: 425px;
-    padding: 8em 0;
-    color: #9a9a8a;
+
 }
 
-.parallax-background {
-    position: absolute;
-    top: - $parallax-window-height / 3;
-    left: 0;
-    width: 100%;
-    height: $parallax-background-height;
-    background: url("../img/eggs2.jpg") repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: #fff;
+#bg-services {
+    background: url("../img/eggs2.jpg");
+    background-size: 1500px;
+    background-attachment: scroll;
+    
+    .hash {
+        height: 425px;
+        background: url("../img/hash.png");
+    }
 }
-
-// Based on http://codepen.io/skeurentjes/
-
-
