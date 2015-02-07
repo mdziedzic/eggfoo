@@ -112,13 +112,13 @@ linters:
         - clip
         - 
         - position
+        - z-index        
         - top
         - right
         - bottom
         - left
         - float
         - clear
-        - z-index        
         - 
         - max-width
         - max-height
@@ -140,6 +140,7 @@ linters:
         -
         - filter
         - background
+        - background-image
         - background-position
         - background-size
         - background-color
