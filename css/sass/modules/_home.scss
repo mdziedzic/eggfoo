@@ -11,12 +11,7 @@ body {
 }
 
 #home {
-    @include background-size(cover);
-    width: 100%;
     height: 100%;
-    background-image: url("../img/eggs.png");
-    background-position: center;
-    background-attachment: fixed;    
     
     h1, 
     p {
