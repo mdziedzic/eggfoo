@@ -21,5 +21,11 @@ $(document).ready(function () {
         }
     })        
 
+    
+    $("#nav-nobar, #nav-bar").mouseover(function() {
+        alert("bob");
+    })
+    
+    
 });
 
