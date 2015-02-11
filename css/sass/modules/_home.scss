@@ -4,10 +4,11 @@ body {
 }
 
 #logo {
+    position: relative;
     @include animation(fadeIn 0.75s ease-in);
     display: block;
     margin: 0 auto;
-    padding-top: 20px;
+    top: 40px;
 }
 
 #home {
