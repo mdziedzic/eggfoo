@@ -19,15 +19,37 @@ $(document).ready(function () {
             }
         }
     });       
-    
-    var wp_section = new Waypoint({
-        element: $("#services"),
-        handler: function(direction) {
-            $.notify(direction);
-        }
-    });
+        
+    function setupWaypoint(sPrev, sNext, navMenu, navMenuHighlight) {
+        var sNextMenu = navMenu + sNext;
+        var sPrevMenu = navMenu + sPrev;
+        var wp = new Waypoint({
+            element: $("#" + sNext),
+            handler: function(direction) {
+                if (direction === "down") {
+                    $(sNextMenu).addClass(navMenuHighlight);
+                    $(sPrevMenu).removeClass(navMenuHighlight);
+                } else if (direction === "up") {
+                    $(sNextMenu).removeClass(navMenuHighlight);
+                    $(sPrevMenu).addClass(navMenuHighlight);
+                }
+            },
+            offset: "50%"
+        });
+        return wp;
+    }
 
+    var navMenu = ".nav-menu-";
+    var navMenuHighlight = "nav-menu-location";
     
+    $(".nav-menu-home").addClass(navMenuHighlight);
+    
+    var wp_services = setupWaypoint("home", "services", navMenu, navMenuHighlight);
+    var wp_work = setupWaypoint("services", "work", navMenu, navMenuHighlight);
+    var wp_about = setupWaypoint("work", "about", navMenu, navMenuHighlight);
+    var wp_contact = setupWaypoint("about", "contact", navMenu, navMenuHighlight);
+     
+  
     
     // -------------------------------------------------------  navigation
     
