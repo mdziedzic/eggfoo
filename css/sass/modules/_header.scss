@@ -25,7 +25,7 @@
     color: $nav-menu-text-color;
     
     p {
-        transition: background-color 0.25s linear, color 0.25s linear;
+        @include transition(background-color 0.25s linear, color 0.25s linear);
         z-index: 500;
         margin: 0;
         padding: 0 0 0 30px;
