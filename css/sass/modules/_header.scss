@@ -10,8 +10,35 @@
 }
 
 #nav-bar {
-    background-image: url("../img/menu-gray.svg");
     z-index: 200;
+    background-image: url("../img/menu-gray.svg");
+}
+
+#nav-menu {
+    display: none;
+    position: fixed;
+    z-index: 300;
+    top: 20px;
+    width: 375px;
+    background-color: rgba(155, 161, 158, 0.95);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.13);    
+    color: $nav-menu-text-color;
+    
+    p {
+        transition: background-color 0.25s linear, color 0.25s linear;
+        z-index: 500;
+        margin: 0;
+        padding: 0 0 0 30px;
+    }
+    
+    a {
+        color: $nav-menu-text-color;
+    }
+    
+    .nav-menu-select {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #9ba19e;
+    }
 }
 
 header {
