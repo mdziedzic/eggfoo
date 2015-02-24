@@ -16,7 +16,7 @@ footer {
 }
 
 .l-content {    
-    @include outer-container($max-width);        
+    @include outer-container($max-width); 
 }
 
 .l-section-header {

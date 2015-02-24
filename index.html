@@ -67,7 +67,11 @@
         </div>
         
         
-        <section id="services">           
+        <section id="services"> 
+            <canvas id="egg-canvas" data-paper-resize="true"></canvas>
+            <img id="egg300" class="hidden" src="img/egg-mesh-300.png" alt="egg" />
+            <img id="egg500" class="hidden" src="img/egg-mesh-500.png" alt="egg" />
+            <img id="egg1000" class="hidden" src="img/egg-mesh-1000.png" alt="egg" />
             <div class="l-content">
                 <div class="l-section-header"><h2>services</h2></div>
                 <div class="l-section-body">
@@ -75,7 +79,7 @@
                     <p>User interface &amp; experience.<br />
                     Responsive, mobile-friendly layouts.<br />
                     Branding. Photography. Illustration.</p><br />
-                    
+
                     <h3>Front-End Development</h3>            
                     <p>HTML/CSS/JS-jQuery. Wordpress integration.<br />
                     Flash/Actionscript (bitd).</p>
@@ -140,9 +144,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/paperscript" src="js/egg-mover.js" data-paper-canvas="egg-canvas"></script>
         <script src="js/vendor/jquery.parallax-scroll.js"></script>
-        <script src="js/vendor/jquery.waypoints.min.js"></script>        
-        <script src="js/vendor/notify.min.js"></script>        
+        <script src="js/vendor/jquery.waypoints.min.js"></script>
+        <script src="js/vendor/notify.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

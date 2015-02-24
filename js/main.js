@@ -1,18 +1,19 @@
-/*global $, jQuery, alert, Waypoint */
+/*global $, jQuery, alert, Waypoint, console, createjs, paper, document, window */
 
 $(document).ready(function () {
     
     "use strict";
-
+    
     // -------------------------------------------------------  waypoints
     
-    function setupWaypoint(sPrev, sNext, navMenu, navMenuHighlight) {
+    function setupNavWaypoint(sPrev, sNext, navMenu, navMenuHighlight) {
         var sNextMenu = navMenu + sNext,
             sPrevMenu = navMenu + sPrev,
             wp = new Waypoint({
                 element: $("#" + sNext),
                 handler: function (direction) {
                     if (direction === "down") {
+//                        alert(sPrev + "  " + sNext);
                         $(sNextMenu).addClass(navMenuHighlight);
                         $(sPrevMenu).removeClass(navMenuHighlight);
                     } else if (direction === "up") {
@@ -28,11 +29,12 @@ $(document).ready(function () {
     var navMenu = "#nav-menu-",
         navMenuHighlight = "nav-menu-location",
         
-        wp_services = setupWaypoint("home", "services", navMenu, navMenuHighlight),
-        wp_work = setupWaypoint("services", "work", navMenu, navMenuHighlight),
-        wp_about = setupWaypoint("work", "about", navMenu, navMenuHighlight),
-        wp_contact = setupWaypoint("about", "contact", navMenu, navMenuHighlight),
+        wp_services = setupNavWaypoint("home", "services", navMenu, navMenuHighlight),
+        wp_work = setupNavWaypoint("services", "work", navMenu, navMenuHighlight),
+        wp_about = setupNavWaypoint("work", "about", navMenu, navMenuHighlight),
+        wp_contact = setupNavWaypoint("about", "contact", navMenu, navMenuHighlight),
         
+        // waypoint for horizontal menu at top to show/hide
         wp_header = new Waypoint({
             element: $("#home").find("h1"),
             handler: function (direction) {
@@ -89,9 +91,25 @@ $(document).ready(function () {
     $('.bg-holder').parallaxScroll({
         friction: 0.6
     });
-    
-    
-    
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
