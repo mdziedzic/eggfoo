@@ -2,10 +2,3 @@
     overflow: hidden; // mask for eggs
     position: relative;
 }
-
-#egg-canvas {
-    opacity: 0.4;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-}

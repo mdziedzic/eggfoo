@@ -1,10 +1,11 @@
-/*global $, jQuery, alert, Waypoint, console, createjs, paper, document, window */
+/*global $, jQuery, alert, Waypoint, console, createjs, paper, document, window,
+        createEgg, Raster, Symbol, event */
 
 $(document).ready(function () {
     
     "use strict";
     
-    // -------------------------------------------------------  waypoints
+    // -------------------------------------------------------  navigation
     
     function setupNavWaypoint(sPrev, sNext, navMenu, navMenuHighlight) {
         var sNextMenu = navMenu + sNext,
@@ -13,7 +14,6 @@ $(document).ready(function () {
                 element: $("#" + sNext),
                 handler: function (direction) {
                     if (direction === "down") {
-//                        alert(sPrev + "  " + sNext);
                         $(sNextMenu).addClass(navMenuHighlight);
                         $(sPrevMenu).removeClass(navMenuHighlight);
                     } else if (direction === "up") {
@@ -50,10 +50,7 @@ $(document).ready(function () {
      
     $("#nav-menu-home").addClass(navMenuHighlight); // for when page first loads
   
-    
-    
-    // -------------------------------------------------------  navigation
-    
+     
     // navigaton show/hide
     $("#nav-menu").hide();
     $("#nav-nobar, #nav-bar, #nav-menu").hover(
@@ -91,24 +88,72 @@ $(document).ready(function () {
     $('.bg-holder').parallaxScroll({
         friction: 0.6
     });
+    
 
+    
+    // -------------------------------------------------------  egg-mover
+    
+    var eMov = $('#egg-canvas'),
+        wp_eggmover_bgservices_down = new Waypoint({
+        element: $("#bg-services"),
+        handler: function (direction) {
+            if (direction === "down") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#work').prepend(eMov);
+                    eMov.fadeIn(200);
+                });
+            } else if (direction === "up") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#services').prepend(eMov);                
+                    eMov.fadeIn(200);
+                });
+            }
+        },
+        offset: "25%"
+    });
+
+
+    
+    // -------------------------------------------------------  work
+
+    $(".work-project").hover(
+        function () {
+            $(this).find(".work-project-select").fadeIn(200, function () {
+                $(this).find("h3, p").fadeIn(200);
+            });
+        }, 
+        function () {
+            $(this).find(".work-project-select").fadeOut(200);
+            $(this).find("h3, p").fadeOut(200);
+        }
+    ).click(
+        function () {
+            event.stopPropagation();
+        }
+    );
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

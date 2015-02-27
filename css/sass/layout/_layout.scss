@@ -35,6 +35,20 @@ footer {
     margin-bottom: 100px;
 }
 
+#work {
+    .l-section-body {
+        @include span-columns(12);
+        @include shift(0);
+        margin-top: 35px;
+
+        .l-work-project {
+            float: left;
+            width: 50%;
+            height: 314px;
+        }
+    }
+}
+
 .l-section-bottom {
     height: 425px;
     background-color: $orange-alpha;

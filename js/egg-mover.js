@@ -6,15 +6,18 @@
 "use strict";
 
 var mousePoint = view.center,
-    isPaused = true;
+    isPaused = true,
+    maxHeight = document.getElementById("work").offsetHeight,
+    firstTime = true;
 
+
+document.getElementById("services").onclick = onMouseUp;
+document.getElementById("work").onclick = onMouseUp;
 
 function onMouseUp(event) {
     isPaused = !isPaused;
 }
 
-
-document.getElementById("services").onclick = onMouseUp;
 
 //function onMouseMove(event) {
 //    mousePoint = event.point
@@ -27,13 +30,17 @@ if (!Modernizr.touch) {
 
 
 function onResize(event) {
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    var canvas = document.getElementById("egg-canvas");
+    var w = window.innerWidth,
+        h = maxHeight,
+        canvas = document.getElementById("egg-canvas");
     canvas.innerWidth = w;
     canvas.innerHeight = h;
     view.viewSize = new Size(w, h);
     view.draw();
+    if (firstTime){
+        createEggs();
+        firstTime = false;
+    }
 }
 
 
@@ -63,22 +70,23 @@ function onFrame(event) {
 }
 
 
-function createEgg(egg) {
-    var center = Point.random() * view.size;
-    var placedSymbol = egg.place(center);
+function placeEgg(egg) {
+    var center = Point.random() * view.size,
+        placedSymbol = egg.place(center);
     placedSymbol.scale(0.5);    
     placedSymbol.rotate(Math.floor(Math.random() * 360));    
 }
 
-
-createEgg(new Symbol(new Raster("egg300")));
-createEgg(new Symbol(new Raster("egg300")));
-createEgg(new Symbol(new Raster("egg300")));
-createEgg(new Symbol(new Raster("egg300")));
-createEgg(new Symbol(new Raster("egg500")));
-createEgg(new Symbol(new Raster("egg500")));
-createEgg(new Symbol(new Raster("egg500")));
-createEgg(new Symbol(new Raster("egg500")));
-createEgg(new Symbol(new Raster("egg1000")));
-createEgg(new Symbol(new Raster("egg1000")));
+function createEggs() {
+    placeEgg(new Symbol(new Raster("egg300")));
+    placeEgg(new Symbol(new Raster("egg300")));
+    placeEgg(new Symbol(new Raster("egg300")));
+    placeEgg(new Symbol(new Raster("egg300")));
+    placeEgg(new Symbol(new Raster("egg500")));
+    placeEgg(new Symbol(new Raster("egg500")));
+    placeEgg(new Symbol(new Raster("egg500")));
+    placeEgg(new Symbol(new Raster("egg500")));
+    placeEgg(new Symbol(new Raster("egg1000")));
+    placeEgg(new Symbol(new Raster("egg1000")));
+}
 

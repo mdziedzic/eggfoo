@@ -1,0 +1,46 @@
+#work {
+    overflow: hidden; // mask for eggs
+    position: relative;
+}
+
+.work-project {
+    position: relative;
+    background-image: url("../img/bg-work.png");
+    background-size: 28px 28px;
+    border: 1px solid rgba(216, 216, 216, 0.20);
+    
+    .work-project-select {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 25% 32px 0;
+        background-color: rgba(39, 39, 39, 0.5);
+        color: #fff;
+        
+        h3,
+        p {
+            display: none;
+        }
+        
+        h3 {
+            font-size: 1.9em;
+            font-weight: 300;
+        }
+        
+        p {
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
