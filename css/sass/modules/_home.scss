@@ -7,28 +7,44 @@ body {
     @include animation(fadeIn 0.75s ease-in);
     display: block;
     position: relative;
-    top: 40px;
+    top: 20px;
     margin: 0 auto;
 }
 
 #home {
     height: 100%;
+    background: url("../img/egg-mesh-home-bg.png") no-repeat;
+    background-position: 50% 50%;
+    background-size:  65%;
     
-    h1, 
-    p {
-        max-width: 90%;
-        margin: 0 auto;
-        padding-top: 100px;
-        text-align: center;
+    #home-header {
+        @include vertical-align;
+    
+        h1 {
+            max-width: 90%;
+            margin: -0.35em auto 0;
+            line-height: 0.52em;
+            text-align: center;
+        }
+
+        span {
+            opacity: 0.8;
+            color: $orange;
+        }
     }
-    
-    p {
-        padding-top: 50px;
-        color: #fff;
-    }  
-    
-    #footnote-2 {
-        max-width: 50%;
-        font-size: 1em;
+
+    #home-text {
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+
+        p {
+            position: relative;
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+        }  
     }
 }
+
