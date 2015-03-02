@@ -21,7 +21,7 @@ footer {
 
 .l-section-header {
     @include span-columns(4);
-    margin-top: 240px;
+    margin-top: 200px;
     
     h2 {
         text-align: right;
@@ -29,9 +29,9 @@ footer {
 }
 
 .l-section-body { 
-    @include span-columns(7);
+    @include span-columns(5);
     @include shift(1);
-    margin-top: 170px;
+    margin-top: 130px;
     margin-bottom: 100px;
 }
 
