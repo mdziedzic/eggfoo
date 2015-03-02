@@ -15,7 +15,7 @@ body {
     height: 100%;
     background: url("../img/egg-mesh-home-bg.png") no-repeat;
     background-position: 50% 50%;
-    background-size:  65%;
+    background-size: 65%;
     
     #home-header {
         @include vertical-align;
@@ -35,14 +35,16 @@ body {
 
     #home-text {
         position: absolute;
-        bottom: 5%;
+        bottom: 10%;
         width: 100%;
 
         p {
+            opacity: 0.8;
             position: relative;
             max-width: 90%;
             margin: 0 auto;
             text-align: center;
+            font-weight: 300;
             color: #fff;
         }  
     }
