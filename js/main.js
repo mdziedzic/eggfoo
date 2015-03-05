@@ -74,7 +74,7 @@ $(document).ready(function () {
     );
     
     // navigation scroll to page sections
-    $("a[href^='#']", "#nav-menu").click(function (event) {
+    $("a[href^='#']").click(function (event) {
         var $target = $($(this).attr("href"));
         event.preventDefault();
         $("html, body").animate({
@@ -137,15 +137,7 @@ $(document).ready(function () {
     
     
     
-      
-    
-    
-    
-    
-    
-    $("h1, .parallax-text").fitText(0.7);
-    
-    // -------------------------------------------------------  random text
+    // -------------------------------------------------------  parallax text
     
     var parallaxText1 = [ 
         "art &amp;<br /><span>technology</span>",
@@ -169,11 +161,10 @@ $(document).ready(function () {
     index = Math.floor(Math.random() * parallaxText2.length);
     $("#bg-work .parallax-text").html(parallaxText2[index]);
     
+    // resize text as page resizes
+    $("h1, .parallax-text").fitText(0.7);
     
-    
-    
-    
-    
+      
     
 });
 
