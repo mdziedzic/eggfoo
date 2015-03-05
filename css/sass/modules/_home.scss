@@ -17,20 +17,8 @@ body {
     background-position: 50% 50%;
     background-size: 65%;
     
-    #home-header {
-        @include vertical-align;
-    
-        h1 {
-            max-width: 90%;
-            margin: -0.35em auto 0;
-            line-height: 0.52em;
-            text-align: center;
-        }
-
-        span {
-            opacity: 0.8;
-            color: $orange;
-        }
+    h1 {
+        line-height: 0.52em;
     }
 
     #home-text {
@@ -43,8 +31,8 @@ body {
             position: relative;
             max-width: 90%;
             margin: 0 auto;
-            text-align: center;
             font-weight: 300;
+            text-align: center;
             color: #fff;
         }  
     }

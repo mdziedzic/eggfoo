@@ -36,7 +36,7 @@ $(document).ready(function () {
         
         // waypoint for horizontal menu at top to show/hide
         wp_header = new Waypoint({
-            element: $("#home").find("h1"),
+            element: $("#services"),
             handler: function (direction) {
                 if (direction === "down") {
                     $("header").addClass("header-show");
@@ -45,7 +45,8 @@ $(document).ready(function () {
                     $("header").addClass("header-hide");
                     $("header").removeClass("header-show");
                 }
-            }
+            },
+            offset: "95%"
         });
      
     $("#nav-menu-home").addClass(navMenuHighlight); // for when page first loads
@@ -86,7 +87,7 @@ $(document).ready(function () {
     // -------------------------------------------------------  parallaxScroll
     
     $('.bg-holder').parallaxScroll({
-        friction: 0.6
+        friction: 0.2
     });
     
 
@@ -142,10 +143,31 @@ $(document).ready(function () {
     
     
     
-    $("h1").fitText(.7);
+    $("h1, .parallax-text").fitText(0.7);
     
+    // -------------------------------------------------------  random text
     
+    var parallaxText1 = [ 
+        "art &amp;<br /><span>technology</span>",
+        "theory &amp;<br /><span>praxis</span>",
+        "planning &amp;<br /><span>building</span>",
+        "analysis &amp;<br /><span>synthesis</span>",
+        "idea &amp;<br /><span>action</span>"
+    ];
+
+    var parallaxText2 = [ 
+        "imaginary &amp;<br /><span>euler's</span>",
+        "idealsim &amp;<br /><span>realims</span>",
+        "dionysus &amp;<br /><span>apollo</span>",
+        "jobs &amp;<br /><span>wozniak</span>",
+        "jarndyce &amp;<br /><span>jarndyce</span>",
+        "carriage return &amp;<br /><span>linefeed</span>"
+    ];
     
+    var index = Math.floor(Math.random() * parallaxText1.length);
+    $("#bg-services .parallax-text").html(parallaxText1[index]);
+    index = Math.floor(Math.random() * parallaxText2.length);
+    $("#bg-work .parallax-text").html(parallaxText2[index]);
     
     
     
