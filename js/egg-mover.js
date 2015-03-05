@@ -13,6 +13,7 @@ var mousePoint = view.center,
 
 document.getElementById("services").onclick = onMouseUp;
 document.getElementById("work").onclick = onMouseUp;
+document.getElementById("about").onclick = onMouseUp;
 
 function onMouseUp(event) {
     isPaused = !isPaused;

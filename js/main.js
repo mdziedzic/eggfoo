@@ -95,25 +95,46 @@ $(document).ready(function () {
     // -------------------------------------------------------  egg-mover
     
     var eMov = $('#egg-canvas'),
+
         wp_eggmover_bgservices_down = new Waypoint({
-        element: $("#bg-services"),
-        handler: function (direction) {
-            if (direction === "down") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#work').prepend(eMov);
-                    eMov.fadeIn(200);
-                });
-            } else if (direction === "up") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#services').prepend(eMov);                
-                    eMov.fadeIn(200);
-                });
-            }
-        },
-        offset: "25%"
-    });
+            element: $("#bg-services"),
+            handler: function (direction) {
+                if (direction === "down") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#work').prepend(eMov);
+                        eMov.fadeIn(200);
+                    });
+                } else if (direction === "up") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#services').prepend(eMov);                
+                        eMov.fadeIn(200);
+                    });
+                }
+            },
+            offset: "25%"
+        }),
+
+        wp_eggmover_bgwork_down = new Waypoint({
+            element: $("#bg-work"),
+            handler: function (direction) {
+                if (direction === "down") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#about').prepend(eMov);
+                        eMov.fadeIn(200);
+                    });
+                } else if (direction === "up") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#work').prepend(eMov);                
+                        eMov.fadeIn(200);
+                    });
+                }
+            },
+            offset: "25%"
+        });
 
 
     
