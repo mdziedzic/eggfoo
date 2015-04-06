@@ -11,8 +11,8 @@ header {
 }
 
 footer {
-    height: 800px;
-    background-color: $green-alpha;
+    height: 100px;
+    background-color: #000;
 }
 
 .l-content {    
@@ -52,9 +52,4 @@ footer {
             height: 314px;
         }
     }
-}
-
-.l-section-bottom {
-    height: 425px;
-    background-color: $orange-alpha;
 }
