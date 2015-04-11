@@ -175,6 +175,51 @@
             <div class="l-content">
                 <div class="l-section-header"><h2>contact</h2></div>
                 <div class="l-section-body">
+                    <div id="form-messages" class="error"></div>
+<!--                    <form id="contact-form" method="post" action="http://eggfoo.com/dev/eggfoo/messsend.php" enctype="multipart/form-data">-->
+                    <form id="contact-form" method="post" action="http://localhost.local/eggfoo/messsend.php" enctype="multipart/form-data">
+                        <div class="form-field-bg">
+                            <input 
+                                class="fmtext"
+                                name="fm_name" 
+                                type="text" 
+                                id="fm-name" 
+                                placeholder="Name" 
+                                value="' . $_POST['fm_name'] . '"			
+                                size="50" />
+                        </div>
+                            <div class="error"><p>Please enter your name.</p></div>
+                        <div class="form-field-bg">
+                            <input 
+                                class="fmtext"
+                                name="fm_email" 
+                                type="text" 
+                                id="fm-email" 
+                                placeholder="Email address" 
+                                value="' . $_POST['fm_email'] . '" 
+                                size="50" />
+                        </div>
+                            <div class="error"><p>Please enter a valid email.</p></div>
+                        <div class="form-field-bg">
+                            <textarea 
+                                class="fmtextarea"
+                                name="fm_message" 
+                                id="fm-message" 
+                                placeholder="Message" 
+                                cols="50" 
+                                rows="10">' . $_POST['fm_message'] . '
+                            </textarea>
+                        </div>
+                            <div class="error"><p>Please enter a message.</p></div>
+                        <div>
+                            <input 
+                                type="submit"
+                                name="form_submitted" 
+                                id="form-submitted" 
+                                class="form-submit"
+                                value="Send message" />
+                        </div>
+                    </form>
                 </div>
             </div>            
         </section>
@@ -205,6 +250,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
         <script type="text/paperscript" src="js/egg-mover.js" data-paper-canvas="egg-canvas"></script>
         <script src="js/vendor/jquery.parallax-scroll.js"></script>
         <script src="js/vendor/jquery.waypoints.min.js"></script>
