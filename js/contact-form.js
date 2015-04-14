@@ -106,10 +106,12 @@ jQuery(document).ready(function($) {
     
     $("#form-submitted").hover(
         function () {
-            $(this).css("background-color", "rgba(200, 200, 200, 0.6)");
+            $(this).css("background-color", "rgba(85, 85, 85, 0.9)");
+//            $(this).css("color", "rgba(85, 85, 85, 0.75)");
         },
         function () {
-            $(this).css("background-color", "rgba(85, 85, 85, 0.6)");
+            $(this).css("background-color", "rgba(85, 85, 85, 0.5)");
+//            $(this).css("color", "rgba(255, 255, 255, 0.75)");
         }
     );
         
