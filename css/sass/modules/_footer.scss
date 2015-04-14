@@ -6,13 +6,19 @@ footer {
         height: 100%;
     }
     
+    #logo-footer {
+        display: block;
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+    }
     
     p {
         @include vertical-align;
         opacity: 0.5;
         font-size: 0.75em;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
         color: #fff;
     }
     
