@@ -5,11 +5,49 @@
 
 "use strict";
 
-var mousePoint = view.center,
+var eMov = $('#egg-canvas'),
+    mousePoint = view.center,
     isPaused = true,
     maxHeight = document.getElementById("work").offsetHeight,
-    firstTime = true;
-
+    firstTime = true,
+    wp_eggmover_bgservices_down = new Waypoint({
+        element: $("#bg-services"),
+        handler: function (direction) {
+            if (direction === "down") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#work').prepend(eMov);
+                    eMov.fadeIn(200);
+                });
+            } else if (direction === "up") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#services').prepend(eMov);                
+                    eMov.fadeIn(200);
+                });
+            }
+        },
+        offset: "25%"
+    }),
+    wp_eggmover_bgwork_down = new Waypoint({
+        element: $("#bg-work"),
+        handler: function (direction) {
+            if (direction === "down") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#about').prepend(eMov);
+                    eMov.fadeIn(200);
+                });
+            } else if (direction === "up") {
+                eMov.fadeOut(200, function() {
+                    eMov.detach();
+                    $('#work').prepend(eMov);                
+                    eMov.fadeIn(200);
+                });
+            }
+        },
+        offset: "25%"
+    });
 
 document.getElementById("services").onclick = onMouseUp;
 document.getElementById("work").onclick = onMouseUp;
@@ -19,7 +57,6 @@ function onMouseUp(event) {
     isPaused = !isPaused;
 }
 
-
 //function onMouseMove(event) {
 //    mousePoint = event.point
 //}
@@ -28,7 +65,6 @@ if (!Modernizr.touch) {
         mousePoint = event.point;
     };
 }
-
 
 function onResize(event) {
     var w = window.innerWidth,
@@ -43,7 +79,6 @@ function onResize(event) {
         firstTime = false;
     }
 }
-
 
 function onFrame(event) {
     if (!isPaused) {
@@ -69,7 +104,6 @@ function onFrame(event) {
         }
     }
 }
-
 
 function placeEgg(egg) {
     var center = Point.random() * view.size,
