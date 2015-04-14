@@ -1,1 +1,33 @@
-
+footer {
+    background-color: #000;
+    
+    .l-content {
+        position: relative;
+        height: 100%;
+    }
+    
+    
+    p {
+        @include vertical-align;
+        opacity: 0.5;
+        font-size: 0.75em;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+    }
+    
+    img {
+        opacity: 0.5;
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+    
+    #tumblr {
+        right: 35px;
+    }
+    
+    #instagram {
+        right: 59px;
+    }
+}

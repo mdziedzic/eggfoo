@@ -10,11 +10,6 @@ header {
     height: 70px;
 }
 
-footer {
-    height: 100px;
-    background-color: #000;
-}
-
 .l-content {    
     @include outer-container($max-width); 
 }
@@ -51,5 +46,18 @@ footer {
             width: 50%;
             height: 314px;
         }
+    }
+}
+
+footer {
+    height: 100px;
+    
+    .l-section-header {
+        margin-top: 10px;
+    }
+    
+    .l-section-body {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

@@ -185,6 +185,17 @@ $(document).ready(function () {
     // resize text as page resizes
     $("h1, .parallax-text").fitText(0.7);
     
+    
+   // -------------------------------------------------------  footer
+    
+    $("footer img").hover(
+        function() {
+            $(this).fadeTo(250, 1);    
+        },
+        function () {
+            $(this).fadeTo(250, 0.5);      
+        }
+    );
       
     
 });
