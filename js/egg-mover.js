@@ -1,4 +1,4 @@
-/*global $, jQuery, alert, Waypoint, console, createjs, tick, view, Rectangle,
+/*global $, jQuery, location, alert, Waypoint, console, createjs, tick, view, Rectangle,
     Path, project, document, Raster, Symbol, Point, window, Size, Modernizr,
     onMouseMove:true */
 /*jslint node: true */
@@ -9,49 +9,54 @@ var eMov = $('#egg-canvas'),
     mousePoint = view.center,
     isPaused = true,
     maxHeight = document.getElementById("work").offsetHeight,
-    firstTime = true,
-    wp_eggmover_bgservices_down = new Waypoint({
-        element: $("#bg-services"),
-        handler: function (direction) {
-            if (direction === "down") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#work').prepend(eMov);
-                    eMov.fadeIn(200);
-                });
-            } else if (direction === "up") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#services').prepend(eMov);                
-                    eMov.fadeIn(200);
-                });
-            }
-        },
-        offset: "25%"
-    }),
-    wp_eggmover_bgwork_down = new Waypoint({
-        element: $("#bg-work"),
-        handler: function (direction) {
-            if (direction === "down") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#about').prepend(eMov);
-                    eMov.fadeIn(200);
-                });
-            } else if (direction === "up") {
-                eMov.fadeOut(200, function() {
-                    eMov.detach();
-                    $('#work').prepend(eMov);                
-                    eMov.fadeIn(200);
-                });
-            }
-        },
-        offset: "25%"
-    });
+    firstTime = true;
 
-document.getElementById("services").onclick = onMouseUp;
+// the following only applies to index.html
+if (location.pathname.indexOf("work-") == -1) {
+    var wp_eggmover_bgservices_down = new Waypoint({
+            element: $("#bg-services"),
+            handler: function (direction) {
+                if (direction === "down") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#work').prepend(eMov);
+                        eMov.fadeIn(200);
+                    });
+                } else if (direction === "up") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#services').prepend(eMov);                
+                        eMov.fadeIn(200);
+                    });
+                }
+            },
+            offset: "25%"
+        }),
+        wp_eggmover_bgwork_down = new Waypoint({
+            element: $("#bg-work"),
+            handler: function (direction) {
+                if (direction === "down") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#about').prepend(eMov);
+                        eMov.fadeIn(200);
+                    });
+                } else if (direction === "up") {
+                    eMov.fadeOut(200, function() {
+                        eMov.detach();
+                        $('#work').prepend(eMov);                
+                        eMov.fadeIn(200);
+                    });
+                }
+            },
+            offset: "25%"
+        });
+    
+    document.getElementById("services").onclick = onMouseUp;
+    document.getElementById("about").onclick = onMouseUp;
+}
+
 document.getElementById("work").onclick = onMouseUp;
-document.getElementById("about").onclick = onMouseUp;
 
 function onMouseUp(event) {
     isPaused = !isPaused;

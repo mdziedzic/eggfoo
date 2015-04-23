@@ -66,15 +66,6 @@ $(document).ready(function () {
             $(this).removeClass("nav-menu-select");
         }
     );
-    
-    // navigation scroll to page sections
-    $("a[href^='#']").click(function (event) {
-        var $target = $($(this).attr("href"));
-        event.preventDefault();
-        $("html, body").animate({
-            scrollTop: $target.offset().top
-        }, 500);
-    });
-    
+     
 });
 

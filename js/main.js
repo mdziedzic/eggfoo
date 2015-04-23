@@ -5,6 +5,8 @@ $(document).ready(function () {
     
     "use strict";
     
+    $("body").fadeIn(750);
+    
     // -------------------------------------------------------  parallaxScroll
     
     $('.bg-holder').parallaxScroll({
@@ -40,7 +42,7 @@ $(document).ready(function () {
     
     // -------------------------------------------------------  work
 
-    $(".work-project").hover(
+    $(".work-project a").hover(
         function () {
             $(this).find(".work-project-select").fadeIn(250, function () {
                 $(this).find("h3, p").fadeIn(250);
@@ -51,12 +53,17 @@ $(document).ready(function () {
             $(this).find("h3, p").fadeOut(250);
         }
     ).click(
-        function () {
-            event.stopPropagation();
-        }
     );
 
-    
+    $(".fadeLink").click(
+        function () {
+            event.preventDefault();
+            var newLocation = this.href;
+            $("body").fadeOut(750, function () {
+                window.location = newLocation;
+            });
+        }
+    );
     
    // -------------------------------------------------------  footer
     
@@ -68,6 +75,20 @@ $(document).ready(function () {
             $(this).fadeTo(250, 0.5);      
         }
     );
+    
+
+    
+    // -------------------------------------------------------  eggfoo logo scroll
+    
+    // navigation scroll to page sections
+    $("a[href^='#']").click(function (event) {
+        var $target = $($(this).attr("href"));
+        event.preventDefault();
+        $("html, body").animate({
+            scrollTop: $target.offset().top
+        }, 500);
+    });
+    
       
     
 });

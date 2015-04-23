@@ -21,3 +21,38 @@
         color: #fff;
     } 
 }
+//
+//.l-section-body-work {
+//    background-image: url("../img/bg-work.png");
+//    background-size: 28px 28px;
+//    background-color: rgba(255, 255, 255, 0.5);
+//    border: 1px solid rgba(216, 216, 216, 0.20);
+//}
+
+.l-section-body-work span {
+    font-weight: 800;
+}
+
+.l-section-body-work a {
+    color: $orange;
+}
+
+.swatch {
+    opacity: 0.85;
+//    margin-top: 50px;
+}
+
+.l-section-body-work .swatch {
+    opacity: 0.25;
+    position: absolute;
+    top: 130px;
+    right: -100px;
+}
+
+.worklink,
+.worklink:active,
+.worklink:hover,
+.worklink:visited {
+    text-decoration: none;
+    color: $orange;
+}

@@ -1,5 +1,6 @@
 #nav-nobar,
-#nav-bar {
+#nav-bar,
+#nav-bar-work {
     @include animation(rotate 1.75s ease-out);
     position: absolute;
     width: 22px;
@@ -10,6 +11,11 @@
 }
 
 #nav-bar {
+    z-index: 200;
+    background-image: url("../img/menu-gray.svg");
+}
+
+#nav-bar-work {
     z-index: 200;
     background-image: url("../img/menu-gray.svg");
 }

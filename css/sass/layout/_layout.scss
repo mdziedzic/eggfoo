@@ -1,3 +1,7 @@
+body {
+    display: none;
+}
+
 header,
 footer,
 section {
@@ -18,8 +22,14 @@ header {
     @include span-columns(4);
     margin-top: 200px;
     
-    h2 {
+    h2,
+    h3,
+    p {
         text-align: right;
+    }
+    
+    img {
+        float: right;
     }
 }
 
@@ -47,6 +57,14 @@ header {
             height: 314px;
         }
     }
+}
+
+.l-section-body-work { 
+    @include span-columns(5);
+    @include shift(1);
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 100px;
 }
 
 footer {
