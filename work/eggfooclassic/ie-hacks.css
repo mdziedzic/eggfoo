@@ -1,0 +1,16 @@
+#bar {
+	background-image: none;
+}
+
+
+#flash-shadow {
+	background-image: none;
+}
+
+#flash {
+	border: medium;
+	border-style: solid;
+	border-color: #9ba19e;
+	border-width: 8px;
+}
+

@@ -20,6 +20,10 @@
         background-color: rgba(39, 39, 39, 0.5);
         color: #fff;
     } 
+    
+    img {
+        opacity: 0.9;
+    }
 }
 
 .work-example {
@@ -30,16 +34,24 @@
     
     img {
         @include transform(translate(-50%, -50%));
-        opacity: 0.85;
+        opacity: 0.9;
         position: absolute;
-        margin-right: -50%;
         top: 50%;
         left: 50%;
+        margin-right: -50%;
     }
 }
 
+.work-example-border {
+    border: 2px solid rgba(216, 216, 216, 0.20);
+}
+
 .l-section-header-work span {
-    font-weight: 800;
+    font-weight: 600;
+}
+
+.l-section-header-work .workdone {
+    font-weight: 400;
 }
 
 .l-section-header-work a {
