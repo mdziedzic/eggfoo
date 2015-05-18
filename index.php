@@ -27,7 +27,7 @@
                     <h1>design &amp;<br /><span>development</span></h1>
                 </div>
                 <div id="home-text">
-                    <p>A small web-focused studio in Portland, Oregon</p>
+                    <p>Web, iOS, Flash</p>
                 </div>
             </section>   
         </div>
