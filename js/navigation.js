@@ -2,6 +2,7 @@
 $(document).ready(function () {
     
     "use strict";
+    
     function setupNavWaypoint(sPrev, sNext, navMenu, navMenuHighlight) {
         var sNextMenu = navMenu + sNext,
             sPrevMenu = navMenu + sPrev,
@@ -36,9 +37,11 @@ $(document).ready(function () {
                 if (direction === "down") {
                     $("header").addClass("header-show");
                     $("header").removeClass("header-hide");
+                    $("#home-text").fadeOut(250);
                 } else if (direction === "up") {
                     $("header").addClass("header-hide");
                     $("header").removeClass("header-show");
+                    $("#home-text").fadeIn(250);
                 }
             },
             offset: "95%"
