@@ -89,7 +89,7 @@ function onFrame(event) {
     if (!isPaused) {
         var rangeX = view.size.width / 2;
         var deltaX = Math.abs(mousePoint.x - rangeX);
-        var intensityX = Math.abs(deltaX / rangeX - 1) * 1500 + 100;
+        var intensityX = Math.abs(deltaX / rangeX - 1) * 3000 + 700;
         if (mousePoint.x < rangeX) {
             intensityX = -intensityX;
         }
@@ -105,7 +105,7 @@ function onFrame(event) {
             if (item.bounds.top > view.size.height) {
                 item.position.y = -item.bounds.height / 2;
             }
-        item.rotate((Math.sin((event.count + i) / 100) * 12) * 0.1);
+        item.rotate((Math.sin((event.count + i) / 100) * 12) * 0.025);
         }
     }
 }
