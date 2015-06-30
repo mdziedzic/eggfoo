@@ -24,3 +24,4 @@
                 Please <a href="http://browsehappy.com/">upgrade your browser</a> to 
                 improve your experience.</p>
         <![endif]-->
+        <section id="top"></section>
