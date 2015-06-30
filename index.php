@@ -39,7 +39,7 @@
             <img id="egg500" class="hidden" src="img/egg-mesh-500.png" alt="egg" />
             <img id="egg1000" class="hidden" src="img/egg-mesh-1000.png" alt="egg" />
             <div class="l-content">
-                <div class="l-section-header"><h2>services</h2></div>
+                <div class="l-section-header"><a href="#top"><h2>services</h2></a></div>
                 <div class="l-section-body">
                     <h3>Design</h3>
                     <p>Visual, user interface, &amp; experience design.
@@ -63,7 +63,7 @@
        
         <section id="work">
             <div class="l-content">
-                <div class="l-section-header"><h2>work</h2></div>
+                <div class="l-section-header"><a href="#top"><h2>work</h2></a></div>
                 <div class="l-section-body">
                     <div id="work-proj-atw" class="l-work-project work-project">
                         <a href="aroundtheworldin480days" class="fadeLink">
@@ -132,7 +132,7 @@
 
         <section id="about">
             <div class="l-content">
-                <div class="l-section-header"><h2>about</h2></div>
+                <div class="l-section-header"><a href="#top"><h2>about</h2></a></div>
                 <div class="l-section-body">
                     <p>We are a small studio in Portland, Oregon, founded in 2002, currently focused on the designing and developing compelling things of a web nature, usually for small businesses that couldn't otherwise afford custom professionally designed and built websites. Small in that there are just two of us:</p>
                     
@@ -150,7 +150,7 @@
 
         <section id="contact">
             <div class="l-content">
-                <div class="l-section-header"><h2>contact</h2></div>
+                <div class="l-section-header"><a href="#top"><h2>contact</h2></a></div>
                 <div class="l-section-body">
                     <div id="form-messages" class="error"></div>
 <!--                    <form id="contact-form" method="post" action="http://eggfoo.com/dev/eggfoo/messsend.php" enctype="multipart/form-data">-->
