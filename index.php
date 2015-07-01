@@ -42,13 +42,11 @@
                 <div class="l-section-header"><a href="#top"><h2>services</h2></a></div>
                 <div class="l-section-body">
                     <h3>Design</h3>
-                    <p>Visual, user interface, &amp; experience design.
-                    Prototyping. Responsive, mobile-friendly layouts.
-                    Branding. Photography. Illustration.</p><br />
+                    <p>UX/UI/visual.
+                    Logos and branding. Photography and illustration.</p><br />
 
-                    <h3>Front-end Development</h3>            
-                    <p>HTML/CSS/JavaScript. Wordpress.
-                    Flash/Actionscript &amp; iOS (bitd).</p>
+                    <h3>Development</h3>            
+                    <p>Front-End: HTML/CSS/JavaScript/jQuery, Flash/Actionscript, iOS/Objective-C, WordPress integration.</p>
                 </div>
             </div>
         </section>
@@ -134,13 +132,13 @@
             <div class="l-content">
                 <div class="l-section-header"><a href="#top"><h2>about</h2></a></div>
                 <div class="l-section-body">
-                    <p>We are a small studio in Portland, Oregon, founded in 2002, currently focused on the designing and developing compelling things of a web nature, usually for small businesses that couldn't otherwise afford custom professionally designed and built websites. Small in that there are just two of us:</p>
+                    <p>A small studio founded in 2002 in Portland, Oregon focused mainly on helping small businesses that could not otherwise afford professionally designed and built custom websites.</p>
                     
-                    <p>Michael Dziedzic, Principal (linkedln, twitter)<br />
+                    <p>Michael Dziedzic (linkedln, twitter)<br />
                     Emily Dziedzic</p><br />
 
                     <h3>egg</h3>
-                    <p>A symbol undifferentiated potential and, presumably, creativity. Not to be confused with the tiny, uninhabited island (more of an islet really) in the Bahamas, which for a time some believed to be the place where Columbus first made landfall in the New World. Or, for that matter, the late 19th century three-wheeled Swiss automobile. Or the Victorian artist, U.S. defense contractor, or Japanese magazine. And certainly in no way related to the English progressive rock band by the same name, their self-titled debut album featuring the ever thought provoking “While Growing My Hair,” the Hammond Organ mastery of “Fugue In D Minor,” and the curiosity that is “The Song Of McGuillicudie The Pusillanimous (or don't worry James, your socks are hanging in the coal cellar with Thomas),” notwithstanding.</p><br />
+                    <p>A symbol undifferentiated potential and, presumably, creativity. Not to be confused with the tiny, uninhabited island (more of an islet really) in the Bahamas, which for a time some believed to be the place where Columbus first made landfall in the New World. Or, for that matter, the late 19th-century three-wheeled Swiss automobile, Victorian artist, U.S. defense contractor, or Japanese magazine. And certainly in no way related to the English progressive rock band by the same name, their self-titled debut album featuring the ever thought provoking “While Growing My Hair,” the Hammond Organ mastery of “Fugue In D Minor,” and the curiosity that is “The Song Of McGuillicudie The Pusillanimous (or don't worry James, your socks are hanging in the coal cellar with Thomas),” notwithstanding.</p><br />
                     
                     <h3>foo</h3>            
                     <p>A programmer’s first choice for representing a thing abstractly, be it a variable or function, some data, or even just a bit of existential malaise. The canonical example of its kind, foo easily defends against the leading contenders to the metasyntactic-variable throne, viz., blarg, flarp, blurgle, wombat, wibble, and flob.</p>

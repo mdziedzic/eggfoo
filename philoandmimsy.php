@@ -6,10 +6,10 @@
                     <p>iOS App</p><br /><br />
                     <img src="img/work/phm-colorswatch-small.png" width="180" height="30" class="swatch" alt="Swatch"/><br /><br /><br /><br />
                     
-                    <p>At one point we at EGGFOO got it into our heads that we should move our global headquarters to Hawaii in order to diversify our offerings with mini-farming and iOS Development. If not for a severed tendon and a few overly pernicious tomato-loving fruit flies, this app may have very well seen the light of day and graced the iPhones and iPads of children and the young at heart alike. Alas, the best laid plans of mice...</p><br />
+                    <p>At one point we at EGGFOO got it into our heads that we should move our global headquarters to Hawaii in order to diversify our offerings with mini-farming and iOS development. If not for a severed tendon and a few overly pernicious tomato-loving fruit flies, this app may have very well seen the light of day and graced the iPhones and iPads of children and the young at heart alike. Alas, the best laid plans of mice...</p><br />
                     
                     <p><span>Deliverables</span></p>
-                    <p>Visual Identity and Branding. UX/UI/Interaction Design. App Development (Objective-C). Illustration. Storyboarding. Writing.</p><br />
+                    <p>Branding. UX/UI/visual design. App development (Objective-C). Illustration. Storyboarding. Writing.</p><br />
                 </div>
                 <div class="l-section-body-work">
                     <img src="img/work/phm-colorswatch-large.png" width="240" height="40" class="swatch" alt="Swatch"/>

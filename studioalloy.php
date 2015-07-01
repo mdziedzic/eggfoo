@@ -9,7 +9,7 @@
                     <p>One of our first client's when Flash was still all the &mdash; and not the focus of &mdash; rage. We supplied Studio Alloy with a number of visual design explorations and a working prototype in exchange for some beautiful patio furniture. Not a bad deal.</p><br />
                     
                     <p><span>Deliverables</span></p>
-                    <p>Visual Identity and Branding. UX/UI/Interaction Design. Front-End Development (HTML/CSS/Flash-ActionScript). Photography. Working prototype.</p><br />
+                    <p>Logo and branding. UX/UI/visual design. Front-End development (HTML/CSS and Flash/ActionScript). Photography. Working prototype.</p><br />
                     
                     <p><span>Site</span></p>
                     <p><a href="work/studioalloy/index.html" target="_blank">Prototype</a><br />
