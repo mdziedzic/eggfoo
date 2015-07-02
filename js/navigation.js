@@ -53,10 +53,12 @@ $(document).ready(function () {
     $("#nav-menu").hide();
     $("#nav-nobar, #nav-bar, #nav-menu").hover(
         function () {
-            $("#nav-menu").stop().fadeToggle();
+            $("#nav-nobar, #nav-bar").stop().fadeOut(100);
+            $("#nav-menu").stop().slideToggle(200, 'easeOutExpo');
         },
         function () {
-            $("#nav-menu").stop().fadeToggle();
+            $("#nav-menu").stop().slideToggle(200, 'easeOutExpo');
+            $("#nav-nobar, #nav-bar").stop().fadeIn(100);
         }
     );
 

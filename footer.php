@@ -18,7 +18,8 @@
         <script src="js/vendor/jquery.parallax-scroll.js"></script>
         <script src="js/vendor/jquery.waypoints.min.js"></script>
         <script src="js/vendor/notify.min.js"></script>
-
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
