@@ -3,6 +3,13 @@
     position: relative;
 }
 
+// this is a bit of a hack just for 404 page
+// which is built of the work page
+.filenotfound {
+    overflow: auto;
+    height: 100%;
+}
+
 .work-project {
     position: relative;
     background-image: url("../img/bg-work.png");
