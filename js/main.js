@@ -14,20 +14,19 @@ $(document).ready(function () {
     });
     
     var parallaxText1 = [ 
-        "art &amp;<br /><span>technology</span>",
-        "theory &amp;<br /><span>praxis</span>",
-        "planning &amp;<br /><span>building</span>",
-        "analysis &amp;<br /><span>synthesis</span>",
-        "idea &amp;<br /><span>action</span>"
+        "suus 'laganumque<br /><span>tenuis</span>",
+        "hoc<br />est mortuum<br /><span>psittacus</span>",
+        "caseum<br /><span>emere velim</span>",
+        "meum<br />cerebrum<br /><span>nocet</span>",
+        "lorem ipsum<br /><span>dolor sit<br />amet</span>"
     ];
 
     var parallaxText2 = [ 
-        "imaginary &amp;<br /><span>euler's</span>",
-        "idealsim &amp;<br /><span>realims</span>",
-        "dionysus &amp;<br /><span>apollo</span>",
-        "jobs &amp;<br /><span>wozniak</span>",
-        "jarndyce &amp;<br /><span>jarndyce</span>",
-        "carriage return &amp;<br /><span>linefeed</span>"
+        "&lt;div&gt;<br />&lt;!-- bigdata --&gt;<br /><span>&lt;/div&gt;</span>",
+        "@keyframes<br />zmover {<br /><span>0% {</span>",
+        "&lt;?php require(<br /><span>\"head.php\"); ?&gt;</span>",
+        "xdelt++;<br /><span>});</span>",
+        "$(document)<br />.ready(<br /><span>function () {</span>"
     ];
     
     var index = Math.floor(Math.random() * parallaxText1.length);
