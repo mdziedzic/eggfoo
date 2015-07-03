@@ -12,7 +12,7 @@ var eMov = $('#egg-canvas'),
     firstTime = true;
 
 // the following only applies to index.html
-if (location.pathname.indexOf("index") !== -1) {
+if (document.title === "EGGFOO") {
     var wp_eggmover_bgservices_down = new Waypoint({
             element: $("#bg-services"),
             handler: function (direction) {
