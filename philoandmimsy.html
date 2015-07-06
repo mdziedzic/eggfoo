@@ -26,9 +26,22 @@
         <![endif]-->
         <section id="top"></section>
         
-        <?php require("header-work.php"); ?>
-
-        
+        <header>
+            <div class="l-content">
+                <a href="./" class="fadeLink"><nav id="nav-bar-work"></nav></a>
+                <a href="#work"><img id="logo-header" src="img/logo-green.svg" 
+                                     width="156" height="28" alt="EGGFOO" /></a>              
+            </div> 
+        </header>
+       
+        <section id="work">
+            <canvas id="egg-canvas" class="egg-mover" data-paper-resize="true"></canvas>           
+            <img id="egg300" class="hidden" src="img/egg-mesh-300.png" alt="egg" />
+            <img id="egg500" class="hidden" src="img/egg-mesh-500.png" alt="egg" />
+            <img id="egg1000" class="hidden" src="img/egg-mesh-1000.png" alt="egg" />
+            <div class="l-content">
+                <div class="l-section-header l-section-header-work">
+                    <h2><a href="./" class="fadeLink worklink">work</a></h2>        
                     <h3>Philo &amp; Mimsy</h3>
                     <p>iOS App</p><br /><br />
                     <img src="img/work/phm-colorswatch-small.png" width="180" height="30" class="swatch" alt="Swatch"/><br /><br /><br /><br />
@@ -56,4 +69,7 @@
             </div>
         </section>
                         
-<?php require("footer.php"); ?>
+        <!--#include virtual="footer.html" -->
+    
+    </body>
+</html>

@@ -5,6 +5,12 @@
 # to the main server config file (usually called `httpd.conf`), you should add
 # this logic there: http://httpd.apache.org/docs/current/howto/htaccess.html.
 
+
+#eggfoo
+AddOutputFilter INCLUDES .html
+#eggfoo
+
+
 # ##############################################################################
 # # CROSS-ORIGIN RESOURCE SHARING (CORS)                                       #
 # ##############################################################################
@@ -74,7 +80,7 @@ Options -MultiViews
 # You can customize what Apache returns to the client in case of an error (see
 # http://httpd.apache.org/docs/current/mod/core.html#errordocument), e.g.:
 
-ErrorDocument 404 /eggfoo/404.php
+ErrorDocument 404 /eggfoo/404.html
 
 
 # ##############################################################################
@@ -217,7 +223,7 @@ AddDefaultCharset utf-8
 
 # eggfoo
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 # eggfoo
 
 </IfModule>

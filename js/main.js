@@ -7,6 +7,15 @@ $(document).ready(function () {
     
     $("body").fadeIn(750);
     
+    if ((document.referrer.indexOf("aroundtheworldin480days") != -1) ||
+        (document.referrer.indexOf("rebeccakyrouacdesign") != -1) ||
+        (document.referrer.indexOf("syllogism") != -1) ||
+        (document.referrer.indexOf("philoandmimsy") != -1) ||
+        (document.referrer.indexOf("studioalloy") != -1) ||
+        (document.referrer.indexOf("eggfooclassic") != -1)) {
+        document.getElementById('work').scrollIntoView();
+    }
+    
     // -------------------------------------------------------  parallaxScroll
     
     $('.bg-holder').parallaxScroll({
