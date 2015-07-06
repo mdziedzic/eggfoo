@@ -16,6 +16,8 @@ $(document).ready(function () {
         document.getElementById('work').scrollIntoView();
     }
     
+    
+    
     // -------------------------------------------------------  parallaxScroll
     
     $('.bg-holder').parallaxScroll({
