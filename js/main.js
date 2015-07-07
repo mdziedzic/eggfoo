@@ -25,18 +25,17 @@ $(document).ready(function () {
     });
     
     var parallaxText1 = [ 
-        "suus 'laganumque<br /><span>tenuis</span>",
-        "hoc<br />est mortuum<br /><span>psittacus</span>",
-        "caseum<br /><span>emere velim</span>",
-        "meum<br />cerebrum<br /><span>nocet</span>",
-        "lorem ipsum<br /><span>dolor sit<br />amet</span>"
+        "lorem ipsum<br /><span>hoc est mortuum<br />psittacus</span>",
+        "lorem ipsum<br /><span>caseum<br />emere velim</span>",
+        "lorem ipsum<br /><span>meum cerebrum<br />nocet</span>",
+        "lorem ipsum<br /><span>suus 'laganumque<br />tenuis</span>"
     ];
 
     var parallaxText2 = [ 
         "&lt;div&gt;<br />&lt;!-- bigdata --&gt;<br /><span>&lt;/div&gt;</span>",
-        "@keyframes<br />zmover {<br /><span>0% {</span>",
-        "&lt;?php require(<br /><span>\"head.php\"); ?&gt;</span>",
-        "xdelt++;<br /><span>});</span>",
+        "@keyframes<br />errror {<br /><span>0% {</span>",
+        "&lt;?php require(<br /><span>\"420.php\"); ?&gt;</span>",
+        "var review = new Meeting();<br /><span>grayHair++;</span>",
         "$(document)<br />.ready(<br /><span>function () {</span>"
     ];
     
