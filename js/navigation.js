@@ -67,6 +67,20 @@ $(document).ready(function () {
             $(this).removeClass("nav-menu-select");
         }
     );
+    
+    if ((document.referrer.indexOf("aroundtheworldin480days") != -1) ||
+    (document.referrer.indexOf("rebeccakyrouacdesign") != -1) ||
+    (document.referrer.indexOf("syllogism") != -1) ||
+    (document.referrer.indexOf("philoandmimsy") != -1) ||
+    (document.referrer.indexOf("studioalloy") != -1) ||
+    (document.referrer.indexOf("eggfooclassic") != -1)) {
+        document.getElementById('work').scrollIntoView();
+        if ($("#home").scrollTop > 0) {  // this is to fix home being highlighted in nav-menu; kinda wonky, i know.
+            $("#nav-menu-home").removeClass("nav-menu-location");
+        }
+    }
+    
+    
      
 });
 
