@@ -89,7 +89,7 @@ function onFrame(event) {
     if (!isPaused) {
         var rangeX = view.size.width / 2;
         var deltaX = Math.abs(mousePoint.x - rangeX);
-        var intensityX = Math.abs(deltaX / rangeX - 1) * 3000 + 700;
+        var intensityX = Math.abs(deltaX / rangeX - 1) * 5000 + 700;
         if (mousePoint.x < rangeX) {
             intensityX = -intensityX;
         }
@@ -105,28 +105,30 @@ function onFrame(event) {
             if (item.bounds.top > view.size.height) {
                 item.position.y = -item.bounds.height / 2;
             }
-        item.rotate((Math.sin((event.count + i) / 100) * 12) * 0.025);
+        item.rotate((Math.sin((event.count + i + item.rotProgress) / 100) * 12) * item.rotSpeed);
         }
     }
 }
 
-function placeEgg(egg) {
+function placeEgg(egg, rotSpeed, rotProgress) {
     var center = Point.random() * view.size,
         placedSymbol = egg.place(center);
+    placedSymbol.rotSpeed = rotSpeed;
+    placedSymbol.rotProgress = 0;  // set to rotProgress for variation in cycles
     placedSymbol.scale(0.5);    
     placedSymbol.rotate(Math.floor(Math.random() * 360));    
 }
 
 function createEggs() {
-    placeEgg(new Symbol(new Raster("egg300")));
-    placeEgg(new Symbol(new Raster("egg300")));
-    placeEgg(new Symbol(new Raster("egg300")));
-    placeEgg(new Symbol(new Raster("egg300")));
-    placeEgg(new Symbol(new Raster("egg500")));
-    placeEgg(new Symbol(new Raster("egg500")));
-    placeEgg(new Symbol(new Raster("egg500")));
-    placeEgg(new Symbol(new Raster("egg500")));
-    placeEgg(new Symbol(new Raster("egg1000")));
-    placeEgg(new Symbol(new Raster("egg1000")));
+    placeEgg(new Symbol(new Raster("egg300")), 0.025, 0);
+    placeEgg(new Symbol(new Raster("egg300")), 0.010, 100);
+    placeEgg(new Symbol(new Raster("egg300")), 0.030, 200);
+    placeEgg(new Symbol(new Raster("egg300")), 0.017, 300);
+    placeEgg(new Symbol(new Raster("egg500")), 0.025, 0);
+    placeEgg(new Symbol(new Raster("egg500")), 0.013, 100);
+    placeEgg(new Symbol(new Raster("egg500")), 0.017, 200);
+    placeEgg(new Symbol(new Raster("egg500")), 0.015, 300);
+    placeEgg(new Symbol(new Raster("egg1000")), 0.020, 0);
+    placeEgg(new Symbol(new Raster("egg1000")), 0.010, 200);
 }
 
