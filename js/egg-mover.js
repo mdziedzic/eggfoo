@@ -7,7 +7,7 @@
 
 var eMov = $('#egg-canvas'),
     mousePoint = view.center,
-    isPaused = true,
+    isPaused = false,
     maxHeight = document.getElementById("work").offsetHeight,
     firstTime = true;
 
