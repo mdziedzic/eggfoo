@@ -26,8 +26,8 @@ $(document).ready(function () {
         "&lt;div&gt;<br />&lt;!-- bigdata --&gt;<br /><span>&lt;/div&gt;</span>",
         "@keyframes<br />errror {<br /><span>0% {</span>",
         "&lt;?php require(<br /><span>\"420.php\"); ?&gt;</span>",
-        "var review = new Meeting();<br /><span>grayHair++;</span>",
-        "$(document)<br />.ready(<br /><span>function () {</span>"
+        "var amRev = new Meeting();<br /><span>wtf++;</span>",
+        "$(function() { <span>\/\/todo });</span>"
     ];
     
     var index = Math.floor(Math.random() * parallaxText1.length);
