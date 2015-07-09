@@ -65,7 +65,20 @@ $(document).ready(function () {
         }
     );
     
-   // -------------------------------------------------------  footer
+   // -------------------------------------------------------  about icons
+    
+    $("#about img").hover(
+        function() {
+            $(this).fadeTo(250, 1);    
+        },
+        function () {
+            $(this).fadeTo(250, 0.25);      
+        }
+    );
+    
+
+    
+   // -------------------------------------------------------  footer icons
     
     $("footer img").hover(
         function() {
