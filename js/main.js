@@ -25,7 +25,7 @@ $(document).ready(function () {
     var parallaxText2 = [ 
         "&lt;div&gt;<br />&lt;!-- bigdata --&gt;<br /><span>&lt;/div&gt;</span>",
         "@keyframes<br />errror {<br /><span>0% {</span>",
-        "&lt;?php require(<br /><span>\"420.php\"); ?&gt;</span>",
+        "&lt;?php require(<br /><span>\'taodao.php\'); ?&gt;</span>",
         "var amRev = new Meeting();<br /><span>wtf++;</span>",
         "$(function() { <span>\/\/todo });</span>"
     ];
@@ -101,8 +101,6 @@ $(document).ready(function () {
             scrollTop: $target.offset().top
         }, 500);
     });
-    
-      
     
 });
 
