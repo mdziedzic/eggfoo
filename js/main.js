@@ -1,5 +1,5 @@
 /*global $, jQuery, alert, Waypoint, console, createjs, paper, document, window,
-        createEgg, Raster, Symbol, event */
+        createEgg, Raster, Symbol, event, Modernizr */
 
 $(document).ready(function () {
     
@@ -11,9 +11,14 @@ $(document).ready(function () {
     
     // -------------------------------------------------------  parallaxScroll
     
-    $('.bg-holder').parallaxScroll({
-        friction: 0.2
-    });
+//    if (!Modernizr.touch) {
+    if (true) {
+        $('.bg-holder').parallaxScroll({
+            friction: 0.5
+        });
+    } else {
+        
+    }
     
     var parallaxText1 = [ 
         "lorem ipsum<br /><span>hoc est mortuum<br />psittacus</span>",

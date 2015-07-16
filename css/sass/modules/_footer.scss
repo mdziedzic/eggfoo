@@ -8,6 +8,7 @@ footer {
     
     #logo-footer {
         display: block;
+        opacity: 0.5;
         position: relative;
         top: 10px;
         margin: 0 auto;
@@ -20,20 +21,38 @@ footer {
         font-weight: 400;
         text-align: left;
         color: #fff;
+        
+        @include media($screen-small) {
+            top: 110px;
+            text-align: center;
+        }
     }
     
-    img {
-        opacity: 0.5;
+    #social-icons {
         position: absolute;
         top: 40px;
         right: 0;
+
+        @include media($screen-small) {
+            display: block;
+            position: relative;
+            top: 75px;
+            text-align: center;
+        }
+
+        img {
+            opacity: 0.5;
+            position: relative;
+        }
     }
     
+    
     #tumblr {
-        right: 35px;
+        margin-right: 10px;
     }
     
     #instagram {
-        right: 59px;
+        margin-right: 10px;
     }
+    
 }

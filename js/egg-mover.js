@@ -86,7 +86,7 @@ function onResize(event) {
 }
 
 function onFrame(event) {
-    if (!isPaused) {
+    if (!isPaused && !Modernizr.touch) {
         var rangeX = view.size.width / 2;
         var deltaX = Math.abs(mousePoint.x - rangeX);
         var intensityX = Math.abs(deltaX / rangeX - 1) * 5000 + 700;

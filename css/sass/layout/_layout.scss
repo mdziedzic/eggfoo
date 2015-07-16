@@ -16,11 +16,25 @@ header {
 
 .l-content {    
     @include outer-container($max-width); 
+    position: relative;
+    
+    @include media($screen-medium) {
+        @include outer-container(90%);
+    }
 }
 
 .l-section-header {
     @include span-columns(4);
+
     margin-top: 200px;
+    
+    @include media($screen-medium) {
+        @include span-columns(3);
+    }
+    
+    @include media($screen-small) {
+        @include span-columns(1);
+    }
     
     h2,
     h3,
@@ -35,9 +49,21 @@ header {
 
 .l-section-body { 
     @include span-columns(5);
+    
     @include shift(1);
     margin-top: 130px;
     margin-bottom: 100px;
+    
+    @include media($screen-medium) {
+        @include span-columns(6);
+    }
+
+    @include media($screen-small) {
+        @include span-columns(1);
+        @include shift(0);
+        
+        margin-top: 0;
+    }
 }
 
 #services .l-section-body,
@@ -50,12 +76,31 @@ header {
         @include span-columns(12);
         @include shift(0);
         margin-top: 35px;
+        
+        @include media($screen-small) {
+            @include span-columns(1);
+        }
 
         .l-work-project {
             float: left;
             width: 50%;
             height: 314px;
+            
+            @include media($screen-small) {
+                width: 100%;
+            }
         }
+    }
+}
+
+.l-section-header-work {
+    
+    @include media($screen-medium) {
+        @include span-columns(4);
+    }
+
+    @include media($screen-work-medium) {
+        @include span-columns(2);
     }
 }
 
@@ -66,10 +111,24 @@ header {
     position: relative;
     margin-top: 130px;
     margin-bottom: 100px;
+    
+    @include media($screen-medium) {
+        @include shift(0);
+        
+    }
+
+    @include media($screen-work-medium) {
+        @include span-columns(2);
+        @include shift(0);
+    }
 }
 
 footer {
     height: 100px;
+    
+    @include media($screen-small) {
+        height: 200px;
+    }
     
     .l-section-header {
         margin-top: 10px;

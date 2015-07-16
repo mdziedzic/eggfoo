@@ -1,5 +1,10 @@
-#about .l-section-body img {
-    opacity: 0.25;
+#about {
+    overflow: hidden;
+    position: relative;
+    
+    .l-section-body img {
+        opacity: 0.25;
+    }
 }
 
 .linkedin-sm {

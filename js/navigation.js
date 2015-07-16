@@ -46,7 +46,7 @@ $(document).ready(function () {
         });
      
     $("#nav-menu-home").addClass(navMenuHighlight); // for when page first loads
-  
+    
     // navigaton show/hide
     $("#nav-menu").hide();
     $("#nav-nobar, #nav-bar, #nav-menu").hover(
