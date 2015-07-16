@@ -21,6 +21,12 @@ header {
     @include media($screen-medium) {
         @include outer-container(90%);
     }
+    
+    @include media($screen-small) {
+        @media (orientation:landscape) {
+            @include outer-container(75%);
+        }
+    }
 }
 
 .l-section-header {
