@@ -34,16 +34,26 @@ header {
     
     @include media($screen-small) {
         @include span-columns(1);
+        
+        margin-top: 130px;
     }
     
     h2,
     h3,
     p {
         text-align: right;
+        
+        @include media($screen-small) {
+            text-align: left;
+        }
     }
     
     img {
         float: right;
+        
+        @include media($screen-small) {
+            float: left;
+        }
     }
 }
 
