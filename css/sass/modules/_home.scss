@@ -15,7 +15,7 @@ body {
     height: 100%;
     background: url("../img/egg-mesh-home-bg.png") no-repeat;
     background-position: 50% 50%;
-    background-size: 65%;
+    background-size: 80%;    
     
     h1 {
         line-height: 0.52em;
@@ -35,6 +35,10 @@ body {
             text-align: center;
             color: #fff;
         }  
+    }
+
+    @media all and (orientation:portrait) {
+        background-size: 125%;
     }
 }
 
