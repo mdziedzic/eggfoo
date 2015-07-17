@@ -35,7 +35,7 @@ header {
     margin-top: 200px;
     
     @include media($screen-medium) {
-        @include span-columns(3);
+//        @include span-columns(3);
     }
     
     @include media($screen-small) {
@@ -115,8 +115,20 @@ header {
         @include span-columns(4);
     }
 
-    @include media($screen-work-medium) {
-        @include span-columns(2);
+    @include media($screen-small) {
+        @include span-columns(1);
+        
+        margin-top: 130px;
+    }
+    
+    h2,
+    h3,
+    p {
+        text-align: right;
+        
+        @include media($screen-small) {
+            text-align: left;
+        }
     }
 }
 
@@ -129,13 +141,16 @@ header {
     margin-bottom: 100px;
     
     @include media($screen-medium) {
-        @include shift(0);
+        @include shift(1);
         
     }
-
-    @include media($screen-work-medium) {
-        @include span-columns(2);
+    
+    @include media($screen-small) {
+        @include span-columns(1);
         @include shift(0);
+        
+        margin-top: 50px;
+        
     }
 }
 
