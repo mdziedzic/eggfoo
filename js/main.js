@@ -1,5 +1,5 @@
 /*global $, jQuery, alert, Waypoint, console, createjs, paper, document, window,
-        createEgg, Raster, Symbol, event, Modernizr */
+        createEgg, Raster, Symbol, event */
 
 $(document).ready(function () {
     
@@ -11,13 +11,10 @@ $(document).ready(function () {
     
     // -------------------------------------------------------  parallaxScroll
     
-//    if (!Modernizr.touch) {
     if (true) {
         $('.bg-holder').parallaxScroll({
             friction: 0.5
         });
-    } else {
-        
     }
     
     var parallaxText1 = [ 
