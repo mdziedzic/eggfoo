@@ -107,11 +107,9 @@ jQuery(document).ready(function($) {
     $("#form-submitted").hover(
         function () {
             $(this).css("background-color", "rgba(85, 85, 85, 0.9)");
-//            $(this).css("color", "rgba(85, 85, 85, 0.75)");
         },
         function () {
             $(this).css("background-color", "rgba(85, 85, 85, 0.5)");
-//            $(this).css("color", "rgba(255, 255, 255, 0.75)");
         }
     );
         
@@ -148,5 +146,4 @@ jQuery(document).ready(function($) {
         }
         $this.mouseup(mouseUpHandler);
     });    
-    
 });

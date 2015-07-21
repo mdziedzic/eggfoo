@@ -1,4 +1,5 @@
  /*global $, jQuery, alert, Waypoint, document */
+
 $(document).ready(function () {
     
     "use strict";
@@ -79,8 +80,4 @@ $(document).ready(function () {
             $("#nav-menu-home").removeClass("nav-menu-location");
         }
     }
-    
-    
-     
 });
-

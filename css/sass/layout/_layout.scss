@@ -34,10 +34,6 @@ header {
 
     margin-top: 200px;
     
-    @include media($screen-medium) {
-//        @include span-columns(3);
-    }
-    
     @include media($screen-small) {
         @include span-columns(1);
         

@@ -62,9 +62,6 @@ function onMouseUp(event) {
     isPaused = !isPaused;
 }
 
-//function onMouseMove(event) {
-//    mousePoint = event.point
-//}
 if (!Modernizr.touch) {
     onMouseMove = function (event) {
         mousePoint = event.point;
@@ -131,4 +128,3 @@ function createEggs() {
     placeEgg(new Symbol(new Raster("egg1000")), 0.020, 0);
     placeEgg(new Symbol(new Raster("egg1000")), 0.010, 200);
 }
-

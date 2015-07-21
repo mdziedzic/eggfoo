@@ -105,7 +105,3 @@ $(document).ready(function () {
     });
     
 });
-
-
-
-

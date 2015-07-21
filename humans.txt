@@ -7,5 +7,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, JavaScript
     Normalize.css, jQuery, Modernizr, SASS, Bourbon, Neat
