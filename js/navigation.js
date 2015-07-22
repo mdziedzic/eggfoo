@@ -1,4 +1,4 @@
- /*global $, jQuery, alert, Waypoint, document */
+ /*global $, jQuery, alert, Waypoint, document, Modernizr */
 
 $(document).ready(function () {
     
@@ -46,6 +46,11 @@ $(document).ready(function () {
             offset: "95%"
         });
      
+    
+    if (Modernizr.touch) {
+        $("#nav-nobar, #nav-bar").hide();
+    }
+    
     $("#nav-menu-home").addClass(navMenuHighlight); // for when page first loads
     
     // navigaton show/hide
