@@ -3,3 +3,4 @@
 *.css.map
 scss-lint.log
 css/main.css
+/build/
