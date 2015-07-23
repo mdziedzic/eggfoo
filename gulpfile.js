@@ -56,6 +56,5 @@ gulp.task('htmladjust', ['root'], function () {
         .pipe(gulp.dest('build/'));
 });
 
-
-gulp.task('default', ['root', 'js', 'css', 'image', 'htmladjust']);
+gulp.task('default', ['clean', 'root', 'js', 'css', 'image', 'htmladjust']);
     
