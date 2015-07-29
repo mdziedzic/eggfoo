@@ -3,9 +3,11 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     uglifycss = require('gulp-uglifycss'),
+    minifycss = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
     htmlreplace = require('gulp-html-replace'),
+    rename    = require('gulp-rename'),
     del = require('del');
 
 // delete the build directory
@@ -26,7 +28,8 @@ gulp.task('js', ['clean'], function () {
 
 gulp.task('css', ['clean'], function () {
     gulp.src('css/main.css')
-        .pipe(uglifycss())
+        .pipe(minifycss())
+        .pipe(rename('main.min.css'))
         .pipe(gulp.dest('build/css/'));
 });
 
@@ -46,7 +49,8 @@ gulp.task('root', ['clean'], function () {
 gulp.task('htmladjust', ['root'], function () {
     gulp.src('build/header.html')
         .pipe(htmlreplace({
-            'jsheader': 'js/modernizr-2.8.3-custom.min.js'
+            'jsheader': 'js/modernizr-2.8.3-custom.min.js',
+            'cssheader': 'css/main.min.css'
         }))
         .pipe(gulp.dest('build/'));
     gulp.src('build/footer.html')
