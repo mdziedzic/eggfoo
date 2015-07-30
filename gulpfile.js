@@ -58,6 +58,11 @@ gulp.task('htmladjust', ['root'], function () {
             'jsfooter': 'js/app.js'
         }))
         .pipe(gulp.dest('build/'));
+    gulp.src('build/404.html')
+        .pipe(htmlreplace({
+            'jsfooter': 'js/app.js'
+        }))
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('default', ['clean', 'root', 'js', 'css', 'image', 'htmladjust']);
