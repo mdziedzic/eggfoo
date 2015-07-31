@@ -426,6 +426,12 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 </IfModule>
 
+# eggfoo
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+</ifmodule>
+# eggfoo
+
 # ------------------------------------------------------------------------------
 # | Content transformations                                                    |
 # ------------------------------------------------------------------------------
